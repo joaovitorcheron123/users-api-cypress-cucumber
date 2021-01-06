@@ -1,0 +1,31 @@
+{
+  "name": "yarn-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "test": "./node_modules/.bin/cypress run --spec \"**/*.feature\"",
+    "cucumber": "./node_modules/.bin/cypress-tags run -e"
+  },
+  "devDependencies": {
+    "cypress": "^6.2.0"
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-xpath": "^1.6.1",
+    "faker": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^9.0.1",
+    "jsonschema": "^1.4.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "./cypress/integration/step_definitions/"
+  }
+}

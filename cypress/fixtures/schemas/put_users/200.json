@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+      {
+          "createdAt": "2021-01-05T10:10:35.984Z",
+          "name": "AAn eichert",
+          "phone": "797.365.9614 x34126",
+          "city": "Port Maybelle",
+          "zipcode": "61810",
+          "email": "Alia83@yahoo.com"
+      }
+  ],
+  "required": [
+      "createdAt",
+      "name",
+      "phone",
+      "city",
+      "zipcode",
+      "email"
+  ],
+  "properties": {
+      "createdAt": {
+          "$id": "#/properties/createdAt",
+          "type": "string",
+          "title": "The createdAt schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "2021-01-05T10:10:35.984Z"
+          ]
+      },
+      "name": {
+          "$id": "#/properties/name",
+          "type": "string",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "AAn eichert"
+          ]
+      },
+      "phone": {
+          "$id": "#/properties/phone",
+          "type": "string",
+          "title": "The phone schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "797.365.9614 x34126"
+          ]
+      },
+      "city": {
+          "$id": "#/properties/city",
+          "type": "string",
+          "title": "The city schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Port Maybelle"
+          ]
+      },
+      "zipcode": {
+          "$id": "#/properties/zipcode",
+          "type": "string",
+          "title": "The zipcode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "61810"
+          ]
+      },
+      "email": {
+          "$id": "#/properties/email",
+          "type": "string",
+          "title": "The email schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Alia83@yahoo.com"
+          ]
+      }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://5ff45f8016cf4f0017c20132.mockapi.io/api/ch1/",
+  "env": {
+    "global_timeout": 100000,
+    "environment": "PROD"
+  }
+}

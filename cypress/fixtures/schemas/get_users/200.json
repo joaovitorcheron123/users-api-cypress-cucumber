@@ -1,0 +1,123 @@
+{
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+      {
+          "id": "5",
+          "createdAt": "2021-01-05T12:47:25.150Z",
+          "name": "Olaf Feil",
+          "phone": "576.473.2783 x6288",
+          "city": "Royalshire",
+          "zipcode": "61751-3885",
+          "email": "Itzel_Hilll@hotmail.com",
+          "country": "Poland",
+          "address": "2268 Corwin Ridge"
+      }
+  ],
+  "required": [
+      "id",
+      "createdAt",
+      "name",
+      "phone",
+      "city",
+      "zipcode",
+      "email",
+      "country",
+      "address"
+  ],
+  "properties": {
+      "id": {
+          "$id": "#/properties/id",
+          "type": "string",
+          "title": "The id schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "5"
+          ]
+      },
+      "createdAt": {
+          "$id": "#/properties/createdAt",
+          "type": "string",
+          "title": "The createdAt schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "2021-01-05T12:47:25.150Z"
+          ]
+      },
+      "name": {
+          "$id": "#/properties/name",
+          "type": "string",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Olaf Feil"
+          ]
+      },
+      "phone": {
+          "$id": "#/properties/phone",
+          "type": "string",
+          "title": "The phone schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "576.473.2783 x6288"
+          ]
+      },
+      "city": {
+          "$id": "#/properties/city",
+          "type": "string",
+          "title": "The city schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Royalshire"
+          ]
+      },
+      "zipcode": {
+          "$id": "#/properties/zipcode",
+          "type": "string",
+          "title": "The zipcode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "61751-3885"
+          ]
+      },
+      "email": {
+          "$id": "#/properties/email",
+          "type": "string",
+          "title": "The email schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Itzel_Hilll@hotmail.com"
+          ]
+      },
+      "country": {
+          "$id": "#/properties/country",
+          "type": "string",
+          "title": "The country schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Poland"
+          ]
+      },
+      "address": {
+          "$id": "#/properties/address",
+          "type": "string",
+          "title": "The address schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "2268 Corwin Ridge"
+          ]
+      }
+  },
+  "additionalProperties": true
+}
