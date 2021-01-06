@@ -19,35 +19,14 @@ Funcionalidade: Usuários
         | 4  |
         | 15 |
 
-
   @postUsuario
-  Esquema do Cenário: (Post) Novo usuário
-    Quando criar um novo usuário com '<createdAt>' e '<name>' e '<phone>' e '<city>' e '<zipcode>' e '<email>' e '<country>' e '<address>' 
-    Então deverá retornar 'post_users' com status 201
-    E deverá retornar o nome do usuário criado
-
-       Exemplos:
-        | createdAt                | name   | phone               | city      | zipcode  | email            | country | address  | 
-        | 2021-01-05T10:10:35.984Z | Joao   | 797.365.9614 x34126 | Sao Paulo | 61810000 | Alia37@yahoo.com | Brasil  | 697 Br   |
-
-  @postUsuarioFaker
   Cenário: (Post) Novo usuário com dados do Faker
-    Quando criar um novo usuário com o faker
+    Quando criar um novo usuário
     Então deverá retornar 'post_users' com status 201
 
   @putUsuario
-  Esquema do Cenário: (Put) Atualizar usuário
-    Quando atualizar os dados de um usuário '<id>' com '<createdAt>' e '<name>' e '<phone>' e '<city>' e '<zipcode>' e '<email>' e '<country>' e '<address>' 
-    Então deverá retornar 'put_users' com status 200
-    E deverá retornar o nome do usuário atualizado
-
-       Exemplos:
-      | id  | createdAt                | name    | phone               | city      | zipcode  | email            | country | address  | 
-      | 6   | 2021-01-05T10:10:35.984Z | Joao2   | 797.365.9614 x34126 | Sao Paulo | 61810000 | Alia37@yahoo.com | Brasil  | 697 Br   |
-
-  @putUsuarioFaker
   Cenário: (Put) Atualizar usuário com dados do Faker
-    Quando atualizar um usuário ID 4 com o faker
+    Quando atualizar um usuário com o ID 4
     Então deverá retornar 'put_users' com status 200
 
   @deleteUsuario

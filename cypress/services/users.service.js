@@ -2,7 +2,9 @@ import Rest from './_rest.service'
 import factory from '../fixtures/factory'
 // req
 const url = 'users/'
-const bodyFaker = new factory;
+const bodyFaker = function fakerData(){
+  return new factory.faker();
+}
 
 export default class Users extends Rest {
   static get_users() {
@@ -13,20 +15,12 @@ export default class Users extends Rest {
     return super.get(`${url}${id}`);
   }
 
-  static post_users(body){
-    return super.post(url,body);
+  static post_users(){
+    return super.post(url, bodyFaker);
   }
 
-  static post_users_faker(){
-    return super.post(url, bodyFaker.faker());
-  }
-
-  static put_users(id, body){
-    return super.put(`${url}${id}`, body);
-  }
-
-  static put_users_faker(id){
-    return super.put(`${url}${id}`, bodyFaker.faker());
+  static put_users(id){
+    return super.put(`${url}${id}`, bodyFaker);
   }
 
   static delete_users(id) {
