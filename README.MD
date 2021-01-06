@@ -3,7 +3,7 @@ Projeto para automação com Cucumber e cypress.
 
 ## Requisitos
 - [Node LTS](https://nodejs.org/pt-br/)
-- [Yarn] (https://classic.yarnpkg.com/en/)
+- [Yarn](https://classic.yarnpkg.com/en/)
 
 ## Uso
 ```bash
